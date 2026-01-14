@@ -1,6 +1,7 @@
 import './assets/css/style.min.css';
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
+import WhatsApp from "./components/whatsapp.jsx";
 import Header from "./components/00-header.jsx";
 import Main from "./components/01-section-main.jsx";
 import CardsSection from "./components/02-section-card.jsx";
@@ -16,6 +17,7 @@ import Footer from "./components/10-footer.jsx";
 function App() {
   return (
     <>
+      <WhatsApp />
       <SpeedInsights />
       <Header />
       <Main />
