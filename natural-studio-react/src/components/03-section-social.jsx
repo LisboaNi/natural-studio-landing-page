@@ -1,14 +1,14 @@
  import {useTranslate} from "../assets/js/dictionary"
  
  export default function Header() {
-     
-     const { t } = useTranslate();
-     const link01= "https://www.instagram.com/";
-     const link02= "https://www.facebook.com/";
-     const link03= "https://www.youtube.com/";
- 
-   return (
-     <section className="background-contrast">
+
+    const { t } = useTranslate();
+    const link01= process.env.REACT_APP_LINK_01 || "https://www.instagram.com/";
+    const link02= process.env.REACT_APP_LINK_02 || "https://www.facebook.com/";
+    const link03= process.env.REACT_APP_LINK_03 || "https://www.youtube.com/";
+
+  return (
+    <section className="background-contrast">
           <div className="container section">
 
             <img src="/img/IMG02.png" alt=""/>

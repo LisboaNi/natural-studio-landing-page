@@ -51,7 +51,7 @@ export const dictionary = {pt:  {
     card02List06: "+ Secagem",
 
     infoTitle: "Estamos localizados em São Paulo",
-    infoDescription:"Av. Paulista, 1009 - Bela Vista, São Paulo - SP, 01310-100 | (11) 90000-0000",
+    infoDescription: process.env.REACT_APP_ADDRESS || "Av. Paulista, 1009 - Bela Vista, São Paulo - SP, 01310-100 | (11) 90000-0000",
 
     profeTitle: "Especialistas | Nossa Equipe",
     profeName01: "※ Ana Silva",

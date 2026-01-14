@@ -1,6 +1,6 @@
 export default function Header() {
     
-    const whatsappLink = "https://wa.me/5511999999999?text=Olá! Gostaria de agendar um horário.";
+    const whatsappLink = process.env.REACT_APP_WHATSAPP_LINK || "https://wa.me/5511999999999?text=Olá! Gostaria de agendar um horário.";
 
   return (
     <footer className="background-detail">

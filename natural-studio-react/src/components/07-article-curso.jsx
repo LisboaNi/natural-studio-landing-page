@@ -3,7 +3,7 @@ import {useTranslate} from "../assets/js/dictionary"
 export default function Header() {
     
     const { t } = useTranslate();
-    const buttonLink = "#";
+    const buttonLink = process.env.REACT_APP_BUTTON || "#";
 
   return (
     <article>
